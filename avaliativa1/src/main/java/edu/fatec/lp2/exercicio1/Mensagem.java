@@ -1,9 +1,9 @@
 package edu.fatec.lp2.exercicio1;
 
 public abstract class Mensagem {
-    private Contato destinatario;
-    private String horaEnvio;
-    private String conteudo;
+    protected Contato destinatario;
+    protected String horaEnvio;
+    protected String conteudo;
 
     
     public Mensagem(Contato destinatario, String horaEnvio, String conteudo) {
@@ -12,7 +12,7 @@ public abstract class Mensagem {
         this.conteudo = conteudo;
     }
 
-    public abstract Mensagem sendMessage(String mensagem);
+    protected abstract Mensagem sendMessage(String mensagem);
     
     public Contato getDestinatario() {
         return destinatario;

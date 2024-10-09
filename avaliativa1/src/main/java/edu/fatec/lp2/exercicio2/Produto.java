@@ -16,8 +16,8 @@ public class Produto {
     private Double DescontoMaximo;
     private Supermercado supermercado;
 
-    public Supermercado getSupermercado() {
-        return supermercado;
+    public Produto(Supermercado s){
+        this.supermercado = s;
     }
 
     @Override
