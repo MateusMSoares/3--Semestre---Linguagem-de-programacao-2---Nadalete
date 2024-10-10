@@ -10,7 +10,6 @@ public class MsgTexto extends Mensagem{
 
     @Override
     public Mensagem sendMessage(String mensagem){
-        this.conteudo = mensagem;
         return this;
     }
 
